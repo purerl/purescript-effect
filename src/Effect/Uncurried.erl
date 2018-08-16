@@ -25,22 +25,22 @@ mkEffectFn10(Fun) -> fun (A,B,C,D,E,F,G,H,I,J) -> ((((((((((Fun(A))(B))(C))(D))(
 
 % runEffectFnX - making heavy use of auto-currying
 
-runEffectFn1(Fun,A) -> fun (_) -> Fun(A) end.
+runEffectFn1(Fun,A) -> fun () -> Fun(A) end.
 
-runEffectFn2(Fun,A,B) -> fun (_) -> Fun(A,B) end.
+runEffectFn2(Fun,A,B) -> fun () -> Fun(A,B) end.
 
-runEffectFn3(Fun,A,B,C) -> fun (_) -> Fun(A,B,C) end.
+runEffectFn3(Fun,A,B,C) -> fun () -> Fun(A,B,C) end.
 
-runEffectFn4(Fun,A,B,C,D) -> fun (_) -> Fun(A,B,C,D) end.
+runEffectFn4(Fun,A,B,C,D) -> fun () -> Fun(A,B,C,D) end.
 
-runEffectFn5(Fun,A,B,C,D,E) -> fun (_) -> Fun(A,B,C,D,E) end.
+runEffectFn5(Fun,A,B,C,D,E) -> fun () -> Fun(A,B,C,D,E) end.
 
-runEffectFn6(Fun,A,B,C,D,E,F) -> fun (_) -> Fun(A,B,C,D,E,F) end.
+runEffectFn6(Fun,A,B,C,D,E,F) -> fun () -> Fun(A,B,C,D,E,F) end.
 
-runEffectFn7(Fun,A,B,C,D,E,F,G) -> fun (_) -> Fun(A,B,C,D,E,F,G) end.
+runEffectFn7(Fun,A,B,C,D,E,F,G) -> fun () -> Fun(A,B,C,D,E,F,G) end.
 
-runEffectFn8(Fun,A,B,C,D,E,F,G,H) -> fun (_) -> Fun(A,B,C,D,E,F,G,H) end.
+runEffectFn8(Fun,A,B,C,D,E,F,G,H) -> fun () -> Fun(A,B,C,D,E,F,G,H) end.
 
-runEffectFn9(Fun,A,B,C,D,E,F,G,H,I) -> fun (_) -> Fun(A,B,C,D,E,F,G,H,I) end.
+runEffectFn9(Fun,A,B,C,D,E,F,G,H,I) -> fun () -> Fun(A,B,C,D,E,F,G,H,I) end.
 
-runEffectFn10(Fun,A,B,C,D,E,F,G,H,I,J) -> fun (_) -> Fun(A,B,C,D,E,F,G,H,I,J) end.
+runEffectFn10(Fun,A,B,C,D,E,F,G,H,I,J) -> fun () -> Fun(A,B,C,D,E,F,G,H,I,J) end.
